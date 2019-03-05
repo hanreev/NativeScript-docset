@@ -1,0 +1,6 @@
+[submodule "typedoc-dash-theme"]
+	path = typedoc-dash-theme
+	url = https://github.com/hanreev/typedoc-dash-theme
+[submodule "NativeScript"]
+	path = NativeScript
+	url = https://github.com/NativeScript/NativeScript.git
