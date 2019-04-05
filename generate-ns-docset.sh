@@ -4,7 +4,7 @@ export TYPEDOC_DASH_ICONS_PATH=./ns-dash-icons
 
 rm -rf NativeScript.docset
 
-if [[ ! -d typedoc-dash-theme && ! -d NativeScript ]]; then
+if [[ ! -d typedoc-dash-theme || ! -d NativeScript ]]; then
   git submodule update --init
 fi
 
