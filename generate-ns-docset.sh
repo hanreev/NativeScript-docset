@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export TYPEDOC_DASH_ICONS_PATH=./ns-dash-icons
+export TYPEDOC_DASH_ICONS_PATH=../ns-dash-icons
 
 rm -rf NativeScript.docset
 
