@@ -3,6 +3,7 @@
 export TYPEDOC_DASH_ICONS_PATH=../ns-dash-icons
 
 rm -rf NativeScript.docset
+rm -rf NativeScript.tgz
 
 if [[ ! -d typedoc-dash-theme || ! -d NativeScript ]]; then
   git submodule update --init
@@ -26,3 +27,7 @@ node_modules/.bin/typedoc --tsconfig tsconfig.typedoc.json \
   --includeDeclarations \
   --excludeExternals \
   --externalPattern "**/+(tns-core-modules|module).d.ts"
+
+cd ..
+
+tar --exclude '.DS_Store' -cvzf NativeScript.tgz NativeScript.docset
